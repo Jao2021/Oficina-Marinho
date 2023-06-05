@@ -4,14 +4,63 @@ html{
 
 body{
     margin: 0;
+    font-family: var(--fonte-principal);
 }
 
 /* VARIAVEIS */ 
 :root {
-  --verde-titulo: #4e561c;
-  --verde: #4f6745;
-  --rosa-hover: #b195a9;
+  --azul-secundario: #0C43BD;
+  --azul: #040C6C;
+  --amarelo: #DECF00;
   --tamanho-fonte: 18px;
   --fonte-principal: "Raleway";
 	--swiper-theme-color: #323232;
 }
+
+
+/*menu*/
+header{
+    background-color: var(--azul);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vh 9vw;
+    align-items: center;
+}
+
+.menu img {
+    height: 13vh;
+    width: 13vw;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu-items{
+    list-style: none;
+    padding: 0vh 1vw;
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.contatar{
+    background-color: var(--amarelo);
+    padding: 1vh 1vw;
+    color: black !important;
+}
+
+/*banner*/
+
+.banner{
+    background: url(img/banner.png) center left no-repeat;
+    height: 75vh;
+}
+
