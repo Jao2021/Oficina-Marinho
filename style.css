@@ -31,7 +31,7 @@ header{
 }
 
 .menu img {
-    height: 13vh;
+    height: 10vh;
     width: 13vw;
 }
 
@@ -47,8 +47,14 @@ header{
 .menu-items a{
     text-decoration: none;
     color: white;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.menu-items a:hover{
+    border-bottom: 1px var(--amarelo) solid;
 }
 
 .contatar{
@@ -64,7 +70,7 @@ header{
     height: 75vh;
     display: flex;
     justify-content: space-between;
-    padding: 2vh 10vw;
+    padding: 0vh 10vw;
 }
 
 .ban-text{
@@ -83,10 +89,14 @@ header{
 
 .ban-contato{
     height: 60%;
+    text-align: center;
+    padding: 12vh 4vh;
 }
 
 .ban-contato h3{
+    font-size: 2.5vh;
     width: 100%;
+    padding: 1vh 0vw;
     font-weight: 600;
     color: white;
     background-color: var(--azul-secundario);
@@ -94,8 +104,62 @@ header{
 }
 
 .ban-contato-main{
+    padding: 1.5vh 2vw;
     background-color: white;
+    width: 16vw;
 }
 
+
+.contato-informacoes h3{
+	border-bottom: 0.3vw #4f6745 solid;
+}
+
+.contato-formulario-campos{
+	display: flex;
+	flex-direction: column;
+}
+
+.contato-formulario-campos-input{
+	padding: 1.5vh;
+	margin-bottom: 2vh;
+	border-radius: 0.3vw;
+	border: none;
+	background-color: #ebebeb;
+	
+}
+
+.contato-formulario-campos-input::placeholder{
+	color: #929090;
+	font-family: var(--fonte-principal);
+	outline-color: lightgray;
+}
+
+.contato-formulario-campos-input:focus{
+	color: black;
+	font-family: var(--fonte-principal);
+    outline-color: lightgray;			
+}
+	
+.contato-formulario-campos-input:not(:focus) {
+	color: black;
+	font-family: var(--fonte-principal);
+	outline-color: lightgray;
+}
+
+.contato-formulario-campos-botao{
+	background-color: var(--azul-secundario);
+	color: white;
+	padding: 1vh;
+	border: none;
+	font-family: var(--fonte-principal);
+	font-size: 1vw;
+	
+}
+
+.contato-formulario-campos-botao:hover{
+	background-color: var(--amarelo);
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
+}
 
 
