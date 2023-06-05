@@ -1,0 +1,17 @@
+html{ 
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+/* VARIAVEIS */ 
+:root {
+  --verde-titulo: #4e561c;
+  --verde: #4f6745;
+  --rosa-hover: #b195a9;
+  --tamanho-fonte: 18px;
+  --fonte-principal: "Raleway";
+	--swiper-theme-color: #323232;
+}
