@@ -62,5 +62,40 @@ header{
 .banner{
     background: url(img/banner.png) center left no-repeat;
     height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 10vw;
 }
+
+.ban-text{
+    padding: 6vh 0vh;
+    color: white;
+}
+
+.ban-text h1{
+    font-size: 7vh;
+    font-weight: 700;
+}
+
+.ban-text h3{
+    font-size: 3vh;
+}
+
+.ban-contato{
+    height: 60%;
+}
+
+.ban-contato h3{
+    width: 100%;
+    font-weight: 600;
+    color: white;
+    background-color: var(--azul-secundario);
+    margin: 0;
+}
+
+.ban-contato-main{
+    background-color: white;
+}
+
+
 
