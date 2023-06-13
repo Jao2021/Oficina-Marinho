@@ -24,6 +24,31 @@ header{
     background-color: var(--azul);
 }
 
+.mobile-menu{
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-menu div{
+	width: 27px;
+	height: 2px;
+	background-color: white;
+	margin: 7px;
+}
+
+.mobile-menu.active .line1{
+	transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.mobile-menu.active .line2{
+	opacity: 0;
+}
+
+.mobile-menu.active .line3{
+	transform: rotate(45deg) translate(-4px, -6px);
+}
+
+
 .menu{
     display: flex;
     justify-content: space-between;
@@ -349,12 +374,30 @@ header{
     width: 48%;
 }
 
-/*CONTATO*/
+/*CONTATO-MAP*/
 
 #contato{
     display: flex;
     justify-content: space-around;
-    padding: 2vh 8vw;
+    padding: 3vh 9vw;
+}
+
+
+.contato h1{
+    font-weight: 600;
+    font-size: 4vh;
+    width: 100%;
+}
+
+.contato h1::after{
+    background-color: var(--azul-secundario);
+    content: "";
+    display: block;
+    height: 0.4vh;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin: 1.3vh 0vw;
 }
 
 .contato{
@@ -363,13 +406,20 @@ header{
     width: 50%;
 }
 
+.contato a{
+    padding: 0.5vh 0vh;
+    font-weight: 500;
+}
+
 .contato .contato-formulario-campos{
 	display: flex;
 	flex-direction: column;
+    padding: 4vh 0vh;
 }
 
 .contato .contato-formulario-campos-input{
-	padding: 3vh;
+    width: 70%;
+	padding: 2.5vh;
 	margin-bottom: 2.5vh;
 	border-radius: 0.3vw;
 	border: none;
@@ -398,15 +448,39 @@ header{
 .contato .contato-formulario-campos-botao{
 	background-color: var(--azul-secundario);
 	color: white;
-	padding: 1.3vh;
+    width: 20%;
+	padding: 1.4vh;
 	border: none;
 	font-family: var(--fonte-principal);
+    font-weight: 600;
 	font-size: 1vw;
 	
 }
 
 .contato .contato-formulario-campos-botao:hover{
-	background-color: var(--amarelo);
+	background-color: var(--azul);
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
 }
+
+#contato iframe{
+    height: 70vh;
+}
+
+/*FOOTER*/
+
+footer{
+    margin: 0;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3vh;
+}
+
+footer h2{
+    color: white;
+    font-size: 2vh;
+}
+
+
