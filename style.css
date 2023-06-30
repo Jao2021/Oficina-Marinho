@@ -105,7 +105,6 @@ header{
 }
 
 .ban-text{
-    
     padding: 6vh 0vh;
     color: white;
 }
@@ -142,9 +141,6 @@ header{
 }
 
 
-.contato-informacoes h3{
-	border-bottom: 0.3vw #4f6745 solid;
-}
 
 .contato-formulario-campos{
 	display: flex;
@@ -265,7 +261,7 @@ header{
 #pecas h1{
     font-weight: 600;
     font-size: 4vh;
-    width: 18%;
+    width: 19%;
     color: white;
     padding-bottom: 2vh;
 }

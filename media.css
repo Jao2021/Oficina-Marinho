@@ -8,8 +8,18 @@
   }
 @media screen and (max-width: 450px){
 
+s
 
 /*MENU*/   
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 5vw;
+    align-items: center;
+}
+
+
 .menu ul{
     position: absolute;
     top: 8vh;
@@ -71,6 +81,227 @@
 
 .mobile-menu.active  .line3{
     transform: rotate(45deg) translate(-4px, -6px);
+}
+
+/*BANNER*/
+
+.banner{
+    background: url(img/banner.webp) center left no-repeat;
+    height: 80vh;
+    display: block;
+    align-items: center;
+    width: auto;
+    padding: 2vh 5vw;
+}
+
+.ban-text{
+    text-align: center;
+    padding-top: 15vh;
+    color: white;
+}
+
+.ban-text h1{
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.ban-text h3{
+    font-size: 2vh;
+}
+
+.ban-contato{
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    padding: 0vh;
+}
+
+.ban-contato h3{
+    font-size: 3vh;
+    width: 100%;
+    padding: 3vh 0vw;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    margin: 0;
+}
+
+.ban-contato-main{
+    background-color: transparent;
+    padding: 0vh;
+    width: 100%;
+}
+
+.contato-formulario-campos-botao{
+	background-color: var(--azul-secundario);
+	color: white;
+	padding: 1.3vh;
+	border: none;
+	font-family: var(--fonte-principal);
+	font-size: 4vw;
+	
+}
+
+
+/*SOBRE*/
+
+#sobre{
+    display: block;
+    padding: 2vh 8vw;
+}
+
+.sobre-texto {
+    width: 100%;
+    padding: 6vh 0vh;
+}
+
+.sobre-texto h2{
+    font-weight: 600;
+    font-size: 4vh;
+    width: 100%;
+}
+
+.sobre-texto h2::after{
+    background-color: var(--azul-secundario);
+    content: "";
+    display: block;
+    height: 0.4vh;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin: 1.2vh 0vw;
+}
+
+.sobre-texto p{
+    font-size: 2.3vh;
+    line-height: 1;
+    padding: 5vh 0vh;
+}
+
+.sobre-texto a{
+    padding: 2vh 1.5vw;
+    background-color: #0C43BD;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#sobre img{
+    display: none;
+}
+
+/*PEÇAS*/
+
+#pecas{
+    background: url(img/engrenagem-mob.png) left no-repeat var(--azul);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6vh 8vw;
+}
+#pecas h1{
+    font-weight: 600;
+    font-size: 4vh;
+    width: 100%;
+    color: white;
+    padding-bottom: 2vh;
+}
+
+#pecas main{
+    padding: 2vh 3vw;
+    flex-wrap: wrap;
+}
+
+.pecas-card{
+    margin: 2vh 1vh;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    padding: 1vh 1vh;
+    text-align: center;
+}
+
+.pecas-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.pecas-card h4{
+    padding: 1.5vh;
+}
+
+/*MARCAS*/
+
+#marcas h1{
+    font-weight: 600;
+    font-size: 4vh;
+    width: 31%;
+    padding-bottom: 2vh;
+}
+
+#marcas main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 0vh 0vw 11vw;
+    flex-wrap: wrap;
+}
+
+#marcas main img{
+    padding: 3vh;
+    width: 70%;
+    height: 25vh;
+}
+
+/*fachada*/
+
+#fachada main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2vh 3vw;
+}
+
+#fachada main img{
+    width: 90%;
+    padding: 2vh;
+}
+
+
+/*CONTATO*/
+
+#contato{
+    display: block;
+    padding: 0vh;
+}
+
+.contato{
+    padding: 4.5vh 2vw;
+    background-color: white;
+    width: 80%;
+    padding: 3vh 5vw;
+}
+
+.contato .contato-formulario-campos-input{
+    width: 100%;	
+}
+
+.contato .contato-formulario-campos-botao{
+	background-color: var(--azul-secundario);
+	color: white;
+    width: 30%;
+	padding: 1.4vh;
+	border: none;
+	font-family: var(--fonte-principal);
+    font-weight: 600;
+	font-size: 3vw;
+	
+}
+
+#contato iframe{
+    width: 100%;
 }
 
 }
