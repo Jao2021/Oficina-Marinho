@@ -24,6 +24,27 @@ header{
     background-color: var(--azul);
 }
 
+.btn-wpp{
+	position: fixed;
+	left: 92%;
+	bottom: 5%;
+	padding: 18px;
+	background-color: rgb(17, 212, 17);
+	border-radius: 50%;
+	z-index: 1000000;
+}
+
+.btn-wpp i{
+	color: white;
+	font-size: 40px;
+}
+
+.btn-wpp:hover{
+	background-color: rgb(13, 170, 13);
+	transition: .3s;
+}
+
+
 .mobile-menu{
 	cursor: pointer;
 	display: none;
@@ -339,7 +360,7 @@ header{
 
 #marcas main img{
     padding: 1.5vh 1.5vh;
-    width: 15%;
+    width: 16%;
     height: 20vh;
 }
 
